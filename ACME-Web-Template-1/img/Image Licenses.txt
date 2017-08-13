@@ -9,6 +9,4 @@ This license does not include the right to compile photos from Unsplash to repli
 -IMAGE CREDIT-
 Logo by Mackenzie Childs on acmelogos.com/
 Image-1 by Luca Bravo on Unsplash
-Person-1 by Sam Burriss on Unsplash
-Person-2 by Lesly B. Juarez on Unsplash
-Person-3 by Erik Lucatero on Unsplash
+Image-2 by John Hult on Unsplash
