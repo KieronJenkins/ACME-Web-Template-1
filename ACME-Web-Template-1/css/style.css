@@ -15,8 +15,8 @@ body {
 /* END OF NAV BAR / START OF HERO IMAGES */
 
 .top-bar {
-  background-image: url("../img/image-1.jpg");
-  min-height: 475px;
+  background-image: url("../img/image-1.jpg"); /* TO CHANGE THE IMAGE IN THE TOP BAR REPLACE "image-1.jpg" */
+  min-height: 475px; /* TO CHANGE THE SIZE OF THE TOP BAR REPLACE "475px" */
   background-size: cover;
   margin-top: -10px;
   border-bottom: 5px solid #EB442A;
@@ -40,8 +40,8 @@ body {
 }
 
 .top-bar .btn {
-  width: 150px;
-  height: 50px;
+  width: 150px; /* CHANGE THE WIDTH OF THE INTRODUCTION BUTTON BY REPLACING "150px" */
+  height: 50px; /* CHANGE THE HEIGHT OF THE INTRODUCTION BUTTON BY REPLACING "50px" */
   border-radius: 6px;
   background: Transparent;
   border: 1px solid white;
@@ -50,19 +50,19 @@ body {
 /* Introduction Button on Hover Styling */
 .top-bar .btn:hover {
   background: Transparent;
-  color: grey;
+  color: grey; /* CHANGE COLOUR OF INTRODUCTION BUTTON ON MOUSE HOVER REPLACE "grey" */
 }
 
 #about {
-  margin-top: 150px;
+  margin-top: 150px; /* CHANGE THE SPACE BETWEEN THE HERO IMAGE AND THE ABOUT SECTION BY REPLACING "150px" */
   padding: 10px;
 }
 
 #about p {
   padding: 10px;
-  font-size: 28px;
+  font-size: 28px; /* CHANGE THE FONT SIZE OF THE TEXT IN THE ABOUT SECTION BY REPLACING "28px" */
   line-height: 42px;
-  opacity: 0.7;
+  opacity: 0.7; /* CHANGE THE VISIBILITY OF THE TEXT BY REPLACING "0.7" */
 }
 
 #about .point-color {
@@ -83,41 +83,41 @@ body {
 }
 
 #services .side-image {
-  background: url("../img/image-2.jpg") no-repeat;
+  background: url("../img/image-2.jpg") no-repeat; /* REPLACE IMAGE IN FIRST SECTION OF SERVICE BY REPLACING image-2.jpg */
   background-size: cover;
   height: 400px;
 }
 
 #services .side-image-2 {
-  background: url("../img/image-3.jpg") no-repeat;
+  background: url("../img/image-3.jpg") no-repeat; /* REPLACE IMAGE IN FIRST SECTION OF SERVICE BY REPLACING image-3.jpg */
   background-size: cover;
   height: 400px;
 }
 
 #services .side-image-3 {
-  background: url("../img/image-4.jpg") no-repeat;
+  background: url("../img/image-4.jpg") no-repeat; /* REPLACE IMAGE IN FIRST SECTION OF SERVICE BY REPLACING image-4.jpg */
   background-size: cover;
   height: 400px;
 }
 
 #services .side-text {
   font-family: 'Raleway', sans-serif;
-  background: #EB442A;
+  background: #EB442A; /* CHANGE BACKGROUND COLOUR OF UPPER AND LOWER SERVICE SECTION BY REPLACING "#EB442A" */
   color: white;
   height: 400px;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 32px;
   padding: 100px 100px 100px 100px;
 }
 
 #services .side-text-2 {
   font-family: 'Raleway', sans-serif;
-  background: white;
+  background: white; /* CHANGE BACKGROUND COLOUR OF MIDDLE SERVICE SECTION BY REPLACING "white" */
   color: black;
   height: 400px;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 32px;
   padding: 100px 100px 100px 100px;
 }
@@ -141,10 +141,12 @@ body {
   background: #EB442A;
   color: white;
   box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+  border-top: 4px solid black;
 }
 
 #pricing .pricing-box-mid {
   box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+  border-top: 4px solid black;
 }
 
 #pricing .pricing-box-mid hr {
@@ -154,7 +156,8 @@ body {
 
 
 #pricing h2 {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
+  padding-top: 10px;
 }
 
 #pricing h1 {
@@ -176,18 +179,43 @@ body {
 /* END OF PRICING / START OF CONTACT */
 
 #contact {
-  margin-top: 100px;
+  margin-top: 100px; /* CHANGE THE SPACE BETWEEN THE CONTACT SECTION AND PRICING BY REPLACING "100px" */
   margin-bottom: 150px;
   text-align: center;
   font-family: 'Raleway', sans-serif;
 }
 
 #contact h2 {
-  font-size: 36px;
-  color: #EB442A;
+  font-size: 36px; /* CHANGE FONT SIZE OF THE CONTACT TITLE BY REPLACING "36px" */
+  color: #EB442A; /* CHANGE COLOUR OF THE CONTACT TITLE BY REPLACING "#EB442A" */
 }
 
 #contact p {
   font-size: 30px;
   padding-top: 10px;
+}
+
+/* END OF CONTACT / START OF RESPONSIVE STYLING */
+
+@media screen and (max-width: 768px) {
+
+  #services .side-image-3, #services .side-image-2, #services .side-image {
+  display: none;
+  }
+
+  #services .side-text-2, #services .side-text {
+    padding-top: 50px;
+    font-size: 16px; /* CHANGE FONT SIZE OF SERVICE SECTION ON MOBILE BY REPLACING "16px" */
+    height: 530px;
+    text-align: center; /* CHANGE WHERE THE TEXT IS ALIGNED ON MOBILE FOR THE SERVICES SECTION BY REPLACING "center" */
+  }
+
+  #pricing .pricing-box-mid, #pricing .pricing-box {
+    border-top: 0px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  #about h2, #about p {
+    text-align: center; /* CHANGE WHERE THE TEXT IS ALIGNED ON MOBILE FOR THE ABOUT SECTION BY REPLACING "center" */
+  }
 }
